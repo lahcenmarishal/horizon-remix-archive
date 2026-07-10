@@ -20,6 +20,8 @@ import {
   Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route,
 } from "lucide-react";
 import { useRef, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 export default function Index() {
   return (

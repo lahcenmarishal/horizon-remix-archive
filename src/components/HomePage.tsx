@@ -20,6 +20,8 @@ import {
   Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route,
 } from "lucide-react";
 import { useRef, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 export default function Index() {
   return (
@@ -1691,6 +1693,33 @@ function Membership() {
 /* ------------------------------------------------------------------ CONTACT */
 function Contact() {
   const bi = useBi();
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error(bi("Veuillez remplir tous les champs.", "يرجى ملء جميع الحقول."));
+      return;
+    }
+    setSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: form,
+      });
+      if (error || (data && (data as any).error)) {
+        throw new Error(error?.message || (data as any)?.error || "Erreur");
+      }
+      toast.success(bi("Message envoyé avec succès !", "تم إرسال الرسالة بنجاح!"));
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error(bi("Échec de l'envoi. Réessayez plus tard.", "فشل الإرسال. حاول مرة أخرى لاحقًا."));
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
       <div className="overflow-hidden rounded-3xl bg-hero-gradient p-1">
@@ -1728,23 +1757,47 @@ function Contact() {
               </ul>
             </div>
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}
               className="grid gap-4 rounded-2xl border border-border bg-muted/30 p-6"
             >
               <div className="grid gap-2">
                 <label className="text-xs font-semibold text-foreground">{bi("Nom complet", "الاسم الكامل")}</label>
-                <input className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary" />
+                <input
+                  required
+                  maxLength={100}
+                  value={form.name}
+                  onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
+                  className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
+                />
               </div>
               <div className="grid gap-2">
                 <label className="text-xs font-semibold text-foreground">{bi("Email", "البريد الإلكتروني")}</label>
-                <input type="email" className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary" />
+                <input
+                  type="email"
+                  required
+                  maxLength={255}
+                  value={form.email}
+                  onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                  className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
+                />
               </div>
               <div className="grid gap-2">
                 <label className="text-xs font-semibold text-foreground">{bi("Message", "الرسالة")}</label>
-                <textarea rows={4} className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary" />
+                <textarea
+                  rows={4}
+                  required
+                  maxLength={5000}
+                  value={form.message}
+                  onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
+                  className="rounded-xl border border-border bg-background px-4 py-2.5 text-sm outline-none focus:border-primary"
+                />
               </div>
-              <button className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110">
-                {bi("Envoyer", "إرسال")} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+              <button
+                type="submit"
+                disabled={submitting}
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110 disabled:opacity-60"
+              >
+                {submitting ? bi("Envoi…", "جارٍ الإرسال…") : bi("Envoyer", "إرسال")} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
               </button>
             </form>
           </div>

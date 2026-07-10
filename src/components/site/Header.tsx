@@ -27,11 +27,11 @@ export function Header() {
       <div className="flex w-full items-center gap-2 px-4 py-3 sm:px-6 lg:px-5">
         <Link to="/" className="me-auto flex shrink-0 items-center gap-2 min-[900px]:me-0">
           <img src={logo} alt="Moroccan Scout Fields Association" className="h-11 w-11 rounded-full ring-2 ring-primary/20" />
-          <div className="hidden leading-tight 2xl:block">
-            <div className="text-[13px] font-semibold text-foreground">
+          <div className="leading-tight">
+            <div className="text-[12px] font-semibold text-foreground sm:text-[13px]">
               {bi("Champs Scouts Marocains", "الميادين الكشفية المغربية")}
             </div>
-            <div className="text-[11px] text-muted-foreground">
+            <div className="text-[10px] text-muted-foreground sm:text-[11px]">
               {bi("Moroccan Scout Fields Association", "جمعية تربوية")}
             </div>
           </div>
@@ -42,12 +42,13 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="whitespace-nowrap rounded-md px-1 py-2 text-[10px] font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-foreground xl:px-1.5 xl:text-[11px] 2xl:px-2 2xl:text-[13px]"
+              className="whitespace-nowrap rounded-md px-1.5 py-2 text-[11px] font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-foreground xl:px-2.5 xl:text-[13px] 2xl:px-3 2xl:text-[14px]"
             >
               {bi(item.fr, item.ar)}
             </a>
           ))}
         </nav>
+
 
         <div className="flex items-center gap-2 shrink-0">
           <button

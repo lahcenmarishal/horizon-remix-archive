@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
+import { Toaster } from "@/components/ui/sonner";
 
 function NotFound() {
   return (

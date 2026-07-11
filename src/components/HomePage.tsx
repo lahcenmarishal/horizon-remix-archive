@@ -1952,7 +1952,7 @@ function MinisterialTrainings() {
         />
 
         {/* Progress ladder */}
-        <ol className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {levels.map((lv, i) => {
             const It = lv.icon;
             const isActive = i === active;

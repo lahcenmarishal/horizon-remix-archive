@@ -1872,31 +1872,31 @@ function MinisterialTrainings() {
       soft: "bg-sky-50",
     },
     {
-      icon: ShieldCheck,
+      icon: Award,
       badge_fr: "Degré 3",
       badge_ar: "الدرجة الثالثة",
-      title_fr: "Chef de camp",
-      title_ar: "رئيس المخيم",
-      audience_fr: "Cadres expérimentés ayant complété les degrés précédents.",
-      audience_ar: "الأطر التربوية ذوي الخبرة الطويلة والذين استوفوا شروط التدرج في الدرجات السابقة.",
+      title_fr: "Certificat d'aptitude pédagogique",
+      title_ar: "شهادة الأهلية البيداغوجية",
+      audience_fr: "Cadres ayant validé les degrés 1 et 2, candidats à la certification pédagogique officielle du ministère.",
+      audience_ar: "الأطر الذين اجتازوا الدرجتين الأولى والثانية، والمترشحون للحصول على الشهادة البيداغوجية الرسمية للوزارة.",
       content_fr:
-        "Gestion administrative et financière du camp, direction de l'équipe des animateurs, résolution des conflits, alimentation et santé publique, application des dispositions légales et réglementaires du ministère de tutelle.",
+        "Approfondissement des sciences de l'éducation, psychologie de l'enfant et de l'adolescent, ingénierie pédagogique, évaluation des acquis, éthique éducative et cadre juridique des centres de vacances. Épreuves théoriques et pratiques devant un jury ministériel.",
       content_ar:
-        "التدبير الإداري والمالي للمخيم، قيادة وفاق الأطر (المنشطين)، تسيير النزاعات، التغذية والصحة العامة بالمخيم، وتنزيل التدابير القانونية والتنظيمية الصادرة عن الوزارة الوصية.",
+        "تعميق علوم التربية، سيكولوجية الطفل والمراهق، الهندسة البيداغوجية، تقييم المكتسبات، الأخلاقيات التربوية، والإطار القانوني لمراكز التخييم. اجتياز اختبارات نظرية وتطبيقية أمام لجنة وزارية.",
       practice_fr:
-        "Direction complète d'un camp d'été en tant que directeur stagiaire, sous le contrôle et le suivi des inspecteurs du ministère.",
+        "Encadrement supervisé d'un atelier pédagogique complet et présentation d'un mémoire professionnel devant le jury de certification.",
       practice_ar:
-        "إدارة وتسيير مخيم صيفي كامل كمدير متدرب تحت مراقبة وتتبع مفتشي الوزارة.",
-      color: "from-amber-500 to-orange-500",
-      ring: "ring-amber-200",
-      soft: "bg-amber-50",
+        "تأطير ورشة بيداغوجية كاملة تحت الإشراف وتقديم بحث مهني أمام لجنة المصادقة.",
+      color: "from-violet-500 to-purple-500",
+      ring: "ring-violet-200",
+      soft: "bg-violet-50",
     },
     {
       icon: GraduationCap,
-      badge_fr: "Spécialisés",
-      badge_ar: "التداريب المتخصصة",
-      title_fr: "Formations parallèles & spécialisées",
-      title_ar: "تداريب متخصصة (موازية)",
+      badge_fr: "Degré 4",
+      badge_ar: "الدرجة الرابعة",
+      title_fr: "Formations spécialisées",
+      title_ar: "التداريب المتخصصة",
       audience_fr: "Cadres orientés vers une fonction spécifique du centre de vacances ou vers la formation des formateurs.",
       audience_ar: "الأطر الموجهون لوظيفة خاصة داخل مركز التخييم أو لتأطير المكونين.",
       content_fr:
@@ -1910,6 +1910,26 @@ function MinisterialTrainings() {
       color: "from-rose-500 to-fuchsia-500",
       ring: "ring-rose-200",
       soft: "bg-rose-50",
+    },
+    {
+      icon: ShieldCheck,
+      badge_fr: "Degré 5",
+      badge_ar: "الدرجة الخامسة",
+      title_fr: "Chef de camp",
+      title_ar: "رئيس المخيم",
+      audience_fr: "Cadres expérimentés ayant complété l'ensemble des degrés précédents et obtenu la certification pédagogique.",
+      audience_ar: "الأطر التربوية ذوي الخبرة الطويلة والذين استوفوا شروط التدرج في جميع الدرجات السابقة وحصلوا على الشهادة البيداغوجية.",
+      content_fr:
+        "Gestion administrative et financière du camp, direction de l'équipe des animateurs, résolution des conflits, alimentation et santé publique, application des dispositions légales et réglementaires du ministère de tutelle.",
+      content_ar:
+        "التدبير الإداري والمالي للمخيم، قيادة وفاق الأطر (المنشطين)، تسيير النزاعات، التغذية والصحة العامة بالمخيم، وتنزيل التدابير القانونية والتنظيمية الصادرة عن الوزارة الوصية.",
+      practice_fr:
+        "Direction complète d'un camp d'été en tant que directeur stagiaire, sous le contrôle et le suivi des inspecteurs du ministère.",
+      practice_ar:
+        "إدارة وتسيير مخيم صيفي كامل كمدير متدرب تحت مراقبة وتتبع مفتشي الوزارة.",
+      color: "from-amber-500 to-orange-500",
+      ring: "ring-amber-200",
+      soft: "bg-amber-50",
     },
   ];
 

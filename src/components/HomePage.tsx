@@ -739,20 +739,36 @@ function Objectives() {
         "الطبيعة هي فصلنا الدراسي الأول. يتعلم الكشافة المغاربة ملاحظة النظم البيئية للمملكة واحترامها وحمايتها، من غابات الأرز في الأطلس إلى السواحل الأطلسية والمتوسطية.",
       sections: [
         {
+          heading_fr: "Préservation de l'eau, notre priorité",
+          heading_ar: "الحفاظ على الماء أولويتنا",
+          body_fr:
+            "L'eau est une ressource vitale et fragile au Maroc. Nos unités mènent des campagnes de sensibilisation dans les écoles, quartiers et souks pour promouvoir les gestes économes : fermer le robinet pendant l'ablution ou le brossage, réparer les fuites, récupérer les eaux de pluie, arroser au goutte-à-goutte et réutiliser l'eau grise pour le jardinage. Chaque camp intègre un module « éco-eau » avec mesure de la consommation quotidienne des scouts et défis pour la réduire.",
+          body_ar:
+            "الماء ثروة حيوية وهشّة بالمغرب. تُنظّم فرقنا حملات تحسيسية بالمدارس والأحياء والأسواق للتشجيع على السلوكيات المُقتصِدة: إغلاق الصنبور أثناء الوضوء أو تنظيف الأسنان، إصلاح التسربات، جمع مياه الأمطار، السقي بالتنقيط، وإعادة استعمال المياه الرمادية في البستنة. يتضمّن كل مخيم وحدة «إيكو-ماء» مع قياس الاستهلاك اليومي للكشافة وتحدّيات لتقليصه.",
+        },
+        {
+          heading_fr: "Campagnes de sensibilisation & partenariats",
+          heading_ar: "حملات تحسيسية وشراكات",
+          body_fr:
+            "En partenariat avec l'ONEE, les agences de bassins hydrauliques et les associations locales, les scouts animent la Journée mondiale de l'eau (22 mars), organisent des marches bleues, distribuent des dépliants bilingues, réalisent des fresques murales et interviennent en radio pour rappeler la valeur de chaque goutte, particulièrement dans les régions touchées par le stress hydrique.",
+          body_ar:
+            "بشراكة مع المكتب الوطني للكهرباء والماء الصالح للشرب ووكالات الأحواض المائية والجمعيات المحلية، يُحيي الكشافة اليوم العالمي للماء (22 مارس)، ويُنظّمون مسيرات زرقاء، ويوزّعون مطويات ثنائية اللغة، وينجزون جداريات، ويتدخّلون في الإذاعة للتذكير بقيمة كل قطرة، خاصة في الجهات التي تعاني من الإجهاد المائي.",
+        },
+        {
           heading_fr: "Camps écologiques thématiques",
           heading_ar: "مخيمات بيئية موضوعاتية",
           body_fr:
-            "Des camps sont dédiés à l'eau, à la forêt ou au littoral. Les scouts y mènent des observations naturalistes, des inventaires de biodiversité et des actions de nettoyage encadrées par des experts.",
+            "Des camps sont dédiés à l'eau, à la forêt ou au littoral. Les scouts y mènent des observations naturalistes, des inventaires de biodiversité, des analyses simples de la qualité de l'eau et des actions de nettoyage d'oueds et de sources encadrées par des experts.",
           body_ar:
-            "تُخصص مخيمات للماء أو الغابة أو الساحل. يقوم الكشافة خلالها بملاحظات طبيعية وجرد التنوع البيولوجي وأنشطة نظافة يؤطرها خبراء.",
+            "تُخصص مخيمات للماء أو الغابة أو الساحل. يقوم الكشافة خلالها بملاحظات طبيعية وجرد التنوع البيولوجي وتحاليل مبسّطة لجودة الماء وأنشطة تنظيف الوديان والعيون يؤطرها خبراء.",
         },
         {
           heading_fr: "Reboisement participatif",
           heading_ar: "تشجير تشاركي",
           body_fr:
-            "En partenariat avec les Eaux et Forêts et les collectivités, les fédérations plantent chaque saison des essences locales adaptées, avec un suivi de croissance sur plusieurs années.",
+            "En partenariat avec les Eaux et Forêts et les collectivités, les fédérations plantent chaque saison des essences locales adaptées et peu gourmandes en eau, avec un suivi de croissance sur plusieurs années.",
           body_ar:
-            "بشراكة مع المياه والغابات والجماعات الترابية، تغرس الفروع كل موسم أصنافًا محلية ملائمة، مع تتبع نموها على مدى سنوات.",
+            "بشراكة مع المياه والغابات والجماعات الترابية، تغرس الفروع كل موسم أصنافًا محلية ملائمة وقليلة استهلاك الماء، مع تتبع نموها على مدى سنوات.",
         },
         {
           heading_fr: "Éducation aux gestes verts",

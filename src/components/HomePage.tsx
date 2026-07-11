@@ -82,7 +82,7 @@ function Hero() {
         </h1>
         <h2 className="max-w-3xl text-xl font-semibold text-white/90 md:text-2xl">
           {bi(
-            "Association des Champs Scouts Marocains — Moroccan Scout Fields Association",
+            "Association des Almayadine scouts marocaine — Moroccan Scout Fields Association",
             "جمعية تربوية تعمل تحت لواء الحركة الكشفية الوطنية والعالمية",
           )}
         </h2>
@@ -280,7 +280,7 @@ function About() {
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               {bi(
-                "L'Association des Champs Scouts Marocains est l'une des organisations éducatives du Royaume du Maroc, œuvrant sous la bannière du mouvement scout national et mondial.",
+                "L'Association des Almayadine scouts marocaine est l'une des organisations éducatives du Royaume du Maroc, œuvrant sous la bannière du mouvement scout national et mondial.",
                 "جمعية الميادين الكشفية المغربية هي إحدى المنظمات التربوية في المملكة المغربية، وتعمل تحت لواء الحركة الكشفية الوطنية والعالمية.",
               )}
             </p>
@@ -348,7 +348,7 @@ function MotCommandant() {
               <img
                 src={commandant}
                 alt={bi(
-                  "Le Commandant Général de l'Association des Champs Scouts Marocains",
+                  "Le Commandant Général de l'Association des Almayadine scouts marocaine",
                   "القائد العام لجمعية الميادين الكشفية المغربية",
                 )}
                 className="h-full w-full object-cover"
@@ -362,7 +362,7 @@ function MotCommandant() {
                   {bi("Rachid Hamouimid", "رشيد حمويميد")}
                 </div>
                 <div className="text-xs opacity-80">
-                  {bi("Association des Champs Scouts Marocains", "جمعية الميادين الكشفية المغربية")}
+                  {bi("Association des Almayadine scouts marocaine", "جمعية الميادين الكشفية المغربية")}
                 </div>
               </div>
             </div>
@@ -379,7 +379,7 @@ function MotCommandant() {
                 </p>
                 <p>
                   {bi(
-                    "C'est avec une immense fierté et une profonde émotion que je déclare officiellement ouverte la saison éducative scoute 2026 de notre Association des Champs Scouts Marocains. Cette nouvelle année est une occasion renouvelée de servir notre patrie, de bâtir des générations engagées et de porter haut les valeurs éternelles du scoutisme.",
+                    "C'est avec une immense fierté et une profonde émotion que je déclare officiellement ouverte la saison éducative scoute 2026 de notre Association des Almayadine scouts marocaine. Cette nouvelle année est une occasion renouvelée de servir notre patrie, de bâtir des générations engagées et de porter haut les valeurs éternelles du scoutisme.",
                     "بكلّ فخر واعتزاز، وبعميق الامتنان، أُعلن رسميًا افتتاح الموسم التربوي الكشفي 2026 لجمعيتنا، جمعية الميادين الكشفية المغربية. إن هذا الموسم الجديد فرصة متجددة لخدمة الوطن، وبناء أجيال ملتزمة، ورفع راية القيم الكشفية الخالدة.",
                   )}
                 </p>
@@ -407,7 +407,7 @@ function MotCommandant() {
                   </div>
                   <div className="text-[10px] text-muted-foreground/70">
                     {bi(
-                      "Association des Champs Scouts Marocains",
+                      "Association des Almayadine scouts marocaine",
                       "جمعية الميادين الكشفية المغربية",
                     )}
                   </div>
@@ -529,7 +529,7 @@ function Uniforme() {
             "احترام الزي الرسمي للجمعية",
           )}
           subtitle={bi(
-            "L'uniforme scout est bien plus qu'un vêtement : c'est le signe visible de notre engagement, de notre discipline et de notre appartenance à la grande famille des Champs Scouts Marocains.",
+            "L'uniforme scout est bien plus qu'un vêtement : c'est le signe visible de notre engagement, de notre discipline et de notre appartenance à la grande famille des Almayadine scouts marocaine.",
             "الزي الكشفي أكثر من مجرد لباس، فهو الرمز الظاهر لالتزامنا وانضباطنا وانتمائنا إلى أسرة الميادين الكشفية المغربية.",
           )}
         />
@@ -930,7 +930,7 @@ function Objectives() {
       lead_ar:
         "سياسة رسمية 016/2026 — ضمان بيئة تربوية آمنة وخالية من أي شكل من أشكال الاستغلال أو الإساءة أو الإهمال.",
       intro_fr:
-        "L'Association des Champs Scouts Marocains adopte une politique stricte de protection : mesures préventives, mécanismes de signalement confidentiels, sanctions immédiates et audits réguliers. Chaque enfant et chaque jeune a droit à un espace scout sûr.",
+        "L'Association des Almayadine scouts marocaine adopte une politique stricte de protection : mesures préventives, mécanismes de signalement confidentiels, sanctions immédiates et audits réguliers. Chaque enfant et chaque jeune a droit à un espace scout sûr.",
       intro_ar:
         "تعتمد جمعية الميادين الكشفية المغربية سياسة صارمة للحماية: إجراءات وقائية، وآليات تبليغ سرية، وعقوبات فورية، وتدقيقات منتظمة. لكل طفل وكل شاب الحق في فضاء كشفي آمن.",
       sections: [
@@ -1177,7 +1177,7 @@ function Objectives() {
               <div className="relative flex flex-col gap-5 sm:gap-6">
                 <div className="flex flex-wrap items-center justify-between gap-2 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground sm:text-[11px]">
                   <span>{isAr ? `الفصل ${String(page + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}` : `Chapitre ${String(page + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`}</span>
-                  <span>{isAr ? "جمعية الميادين الكشفية المغربية" : "Association des Champs Scouts Marocains"}</span>
+                  <span>{isAr ? "جمعية الميادين الكشفية المغربية" : "Association des Almayadine scouts marocaine"}</span>
                 </div>
                 <div className="flex items-start gap-3 sm:gap-5">
                   <div className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl ring-1 sm:h-16 sm:w-16 ${p.tone}`}>
@@ -1258,7 +1258,7 @@ function Objectives() {
               <span>
                 {isAr
                   ? "جمعية الميادين الكشفية المغربية · 2026"
-                  : "Association des Champs Scouts Marocains · 2026"}
+                  : "Association des Almayadine scouts marocaine · 2026"}
               </span>
               <span className="font-mono">— {String(page + 1).padStart(2, "0")} —</span>
             </footer>

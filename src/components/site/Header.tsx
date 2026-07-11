@@ -29,7 +29,7 @@ export function Header() {
           <img src={logo} alt="Moroccan Scout Fields Association" className="h-11 w-11 rounded-full ring-2 ring-primary/20" />
           <div className="leading-tight">
             <div className="text-[12px] font-semibold text-foreground sm:text-[13px]">
-              {bi("Champs Scouts Marocains", "الميادين الكشفية المغربية")}
+              {bi("Almayadine scouts marocaine", "الميادين الكشفية المغربية")}
             </div>
             <div className="text-[10px] text-muted-foreground sm:text-[11px]">
               {bi("Moroccan Scout Fields Association", "جمعية تربوية")}

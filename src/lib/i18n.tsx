@@ -7,7 +7,7 @@ type Dict = Record<string, { fr: string; ar: string }>;
 // Only used for chrome/nav strings. Content sections render bilingual blocks inline.
 export const T: Dict = {
   brand_ar: { fr: "جمعية الميادين الكشفية المغربية", ar: "جمعية الميادين الكشفية المغربية" },
-  brand_fr: { fr: "Association des Champs Scouts Marocains", ar: "الجمعية المغربية للميادين الكشفية" },
+  brand_fr: { fr: "Association des Almayadine scouts marocaine", ar: "الجمعية المغربية للميادين الكشفية" },
   nav_home: { fr: "Accueil", ar: "الرئيسية" },
   nav_about: { fr: "L'Association", ar: "الجمعية" },
   nav_vision: { fr: "Vision & Mission", ar: "الرؤية والرسالة" },
@@ -22,7 +22,7 @@ export const T: Dict = {
   cta_discover: { fr: "Découvrir", ar: "اكتشف الجمعية" },
   lang_switch: { fr: "العربية", ar: "Français" },
   footer_rights: {
-    fr: "© 2026 Association des Champs Scouts Marocains. Tous droits réservés.",
+    fr: "© 2026 Association des Almayadine scouts marocaine. Tous droits réservés.",
     ar: "© 2026 جمعية الميادين الكشفية المغربية. جميع الحقوق محفوظة.",
   },
 };

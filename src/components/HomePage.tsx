@@ -63,7 +63,7 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-foreground/90 via-foreground/76 to-primary/62" />
       <div className="mx-auto flex w-full max-w-7xl flex-col items-start gap-5 px-4 py-20 sm:gap-8 sm:px-6 sm:py-24 lg:px-8 lg:py-28 xl:py-32">
         <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-white backdrop-blur sm:px-4 sm:text-xs">
-          <Star className="h-3.5 w-3.5" /> {bi("Mouvement scout marocain", "الحركة الكشفية المغربية")}
+          <Star className="h-3.5 w-3.5" /> {bi("Mouvement scout marocain", "الميادين الكشفية المغربية")}
         </span>
         <div className="flex items-center gap-4 sm:gap-5">
           <img
@@ -82,7 +82,7 @@ function Hero() {
         </h1>
         <h2 className="max-w-3xl text-xl font-semibold text-white/90 md:text-2xl">
           {bi(
-            "Association des Champs Scouts Marocains — Moroccan Scout Fields Association",
+            "Association des Almayadine scouts marocaine — Moroccan Scout Fields Association",
             "جمعية تربوية تعمل تحت لواء الحركة الكشفية الوطنية والعالمية",
           )}
         </h2>
@@ -280,7 +280,7 @@ function About() {
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               {bi(
-                "L'Association des Champs Scouts Marocains est l'une des organisations éducatives du Royaume du Maroc, œuvrant sous la bannière du mouvement scout national et mondial.",
+                "L'Association des Almayadine scouts marocaine est l'une des organisations éducatives du Royaume du Maroc, œuvrant sous la bannière du mouvement scout national et mondial.",
                 "جمعية الميادين الكشفية المغربية هي إحدى المنظمات التربوية في المملكة المغربية، وتعمل تحت لواء الحركة الكشفية الوطنية والعالمية.",
               )}
             </p>
@@ -348,7 +348,7 @@ function MotCommandant() {
               <img
                 src={commandant}
                 alt={bi(
-                  "Le Commandant Général de l'Association des Champs Scouts Marocains",
+                  "Le Commandant Général de l'Association des Almayadine scouts marocaine",
                   "القائد العام لجمعية الميادين الكشفية المغربية",
                 )}
                 className="h-full w-full object-cover"
@@ -362,7 +362,7 @@ function MotCommandant() {
                   {bi("Rachid Hamouimid", "رشيد حمويميد")}
                 </div>
                 <div className="text-xs opacity-80">
-                  {bi("Association des Champs Scouts Marocains", "جمعية الميادين الكشفية المغربية")}
+                  {bi("Association des Almayadine scouts marocaine", "جمعية الميادين الكشفية المغربية")}
                 </div>
               </div>
             </div>
@@ -379,7 +379,7 @@ function MotCommandant() {
                 </p>
                 <p>
                   {bi(
-                    "C'est avec une immense fierté et une profonde émotion que je déclare officiellement ouverte la saison éducative scoute 2026 de notre Association des Champs Scouts Marocains. Cette nouvelle année est une occasion renouvelée de servir notre patrie, de bâtir des générations engagées et de porter haut les valeurs éternelles du scoutisme.",
+                    "C'est avec une immense fierté et une profonde émotion que je déclare officiellement ouverte la saison éducative scoute 2026 de notre Association des Almayadine scouts marocaine. Cette nouvelle année est une occasion renouvelée de servir notre patrie, de bâtir des générations engagées et de porter haut les valeurs éternelles du scoutisme.",
                     "بكلّ فخر واعتزاز، وبعميق الامتنان، أُعلن رسميًا افتتاح الموسم التربوي الكشفي 2026 لجمعيتنا، جمعية الميادين الكشفية المغربية. إن هذا الموسم الجديد فرصة متجددة لخدمة الوطن، وبناء أجيال ملتزمة، ورفع راية القيم الكشفية الخالدة.",
                   )}
                 </p>
@@ -407,7 +407,7 @@ function MotCommandant() {
                   </div>
                   <div className="text-[10px] text-muted-foreground/70">
                     {bi(
-                      "Association des Champs Scouts Marocains",
+                      "Association des Almayadine scouts marocaine",
                       "جمعية الميادين الكشفية المغربية",
                     )}
                   </div>
@@ -529,7 +529,7 @@ function Uniforme() {
             "احترام الزي الرسمي للجمعية",
           )}
           subtitle={bi(
-            "L'uniforme scout est bien plus qu'un vêtement : c'est le signe visible de notre engagement, de notre discipline et de notre appartenance à la grande famille des Champs Scouts Marocains.",
+            "L'uniforme scout est bien plus qu'un vêtement : c'est le signe visible de notre engagement, de notre discipline et de notre appartenance à la grande famille des Almayadine scouts marocaine.",
             "الزي الكشفي أكثر من مجرد لباس، فهو الرمز الظاهر لالتزامنا وانضباطنا وانتمائنا إلى أسرة الميادين الكشفية المغربية.",
           )}
         />
@@ -739,20 +739,36 @@ function Objectives() {
         "الطبيعة هي فصلنا الدراسي الأول. يتعلم الكشافة المغاربة ملاحظة النظم البيئية للمملكة واحترامها وحمايتها، من غابات الأرز في الأطلس إلى السواحل الأطلسية والمتوسطية.",
       sections: [
         {
+          heading_fr: "Préservation de l'eau, notre priorité",
+          heading_ar: "الحفاظ على الماء أولويتنا",
+          body_fr:
+            "L'eau est une ressource vitale et fragile au Maroc. Nos unités mènent des campagnes de sensibilisation dans les écoles, quartiers et souks pour promouvoir les gestes économes : fermer le robinet pendant l'ablution ou le brossage, réparer les fuites, récupérer les eaux de pluie, arroser au goutte-à-goutte et réutiliser l'eau grise pour le jardinage. Chaque camp intègre un module « éco-eau » avec mesure de la consommation quotidienne des scouts et défis pour la réduire.",
+          body_ar:
+            "الماء ثروة حيوية وهشّة بالمغرب. تُنظّم فرقنا حملات تحسيسية بالمدارس والأحياء والأسواق للتشجيع على السلوكيات المُقتصِدة: إغلاق الصنبور أثناء الوضوء أو تنظيف الأسنان، إصلاح التسربات، جمع مياه الأمطار، السقي بالتنقيط، وإعادة استعمال المياه الرمادية في البستنة. يتضمّن كل مخيم وحدة «إيكو-ماء» مع قياس الاستهلاك اليومي للكشافة وتحدّيات لتقليصه.",
+        },
+        {
+          heading_fr: "Campagnes de sensibilisation & partenariats",
+          heading_ar: "حملات تحسيسية وشراكات",
+          body_fr:
+            "En partenariat avec l'ONEE, les agences de bassins hydrauliques et les associations locales, les scouts animent la Journée mondiale de l'eau (22 mars), organisent des marches bleues, distribuent des dépliants bilingues, réalisent des fresques murales et interviennent en radio pour rappeler la valeur de chaque goutte, particulièrement dans les régions touchées par le stress hydrique.",
+          body_ar:
+            "بشراكة مع المكتب الوطني للكهرباء والماء الصالح للشرب ووكالات الأحواض المائية والجمعيات المحلية، يُحيي الكشافة اليوم العالمي للماء (22 مارس)، ويُنظّمون مسيرات زرقاء، ويوزّعون مطويات ثنائية اللغة، وينجزون جداريات، ويتدخّلون في الإذاعة للتذكير بقيمة كل قطرة، خاصة في الجهات التي تعاني من الإجهاد المائي.",
+        },
+        {
           heading_fr: "Camps écologiques thématiques",
           heading_ar: "مخيمات بيئية موضوعاتية",
           body_fr:
-            "Des camps sont dédiés à l'eau, à la forêt ou au littoral. Les scouts y mènent des observations naturalistes, des inventaires de biodiversité et des actions de nettoyage encadrées par des experts.",
+            "Des camps sont dédiés à l'eau, à la forêt ou au littoral. Les scouts y mènent des observations naturalistes, des inventaires de biodiversité, des analyses simples de la qualité de l'eau et des actions de nettoyage d'oueds et de sources encadrées par des experts.",
           body_ar:
-            "تُخصص مخيمات للماء أو الغابة أو الساحل. يقوم الكشافة خلالها بملاحظات طبيعية وجرد التنوع البيولوجي وأنشطة نظافة يؤطرها خبراء.",
+            "تُخصص مخيمات للماء أو الغابة أو الساحل. يقوم الكشافة خلالها بملاحظات طبيعية وجرد التنوع البيولوجي وتحاليل مبسّطة لجودة الماء وأنشطة تنظيف الوديان والعيون يؤطرها خبراء.",
         },
         {
           heading_fr: "Reboisement participatif",
           heading_ar: "تشجير تشاركي",
           body_fr:
-            "En partenariat avec les Eaux et Forêts et les collectivités, les fédérations plantent chaque saison des essences locales adaptées, avec un suivi de croissance sur plusieurs années.",
+            "En partenariat avec les Eaux et Forêts et les collectivités, les fédérations plantent chaque saison des essences locales adaptées et peu gourmandes en eau, avec un suivi de croissance sur plusieurs années.",
           body_ar:
-            "بشراكة مع المياه والغابات والجماعات الترابية، تغرس الفروع كل موسم أصنافًا محلية ملائمة، مع تتبع نموها على مدى سنوات.",
+            "بشراكة مع المياه والغابات والجماعات الترابية، تغرس الفروع كل موسم أصنافًا محلية ملائمة وقليلة استهلاك الماء، مع تتبع نموها على مدى سنوات.",
         },
         {
           heading_fr: "Éducation aux gestes verts",
@@ -930,7 +946,7 @@ function Objectives() {
       lead_ar:
         "سياسة رسمية 016/2026 — ضمان بيئة تربوية آمنة وخالية من أي شكل من أشكال الاستغلال أو الإساءة أو الإهمال.",
       intro_fr:
-        "L'Association des Champs Scouts Marocains adopte une politique stricte de protection : mesures préventives, mécanismes de signalement confidentiels, sanctions immédiates et audits réguliers. Chaque enfant et chaque jeune a droit à un espace scout sûr.",
+        "L'Association des Almayadine scouts marocaine adopte une politique stricte de protection : mesures préventives, mécanismes de signalement confidentiels, sanctions immédiates et audits réguliers. Chaque enfant et chaque jeune a droit à un espace scout sûr.",
       intro_ar:
         "تعتمد جمعية الميادين الكشفية المغربية سياسة صارمة للحماية: إجراءات وقائية، وآليات تبليغ سرية، وعقوبات فورية، وتدقيقات منتظمة. لكل طفل وكل شاب الحق في فضاء كشفي آمن.",
       sections: [
@@ -1177,7 +1193,7 @@ function Objectives() {
               <div className="relative flex flex-col gap-5 sm:gap-6">
                 <div className="flex flex-wrap items-center justify-between gap-2 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground sm:text-[11px]">
                   <span>{isAr ? `الفصل ${String(page + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}` : `Chapitre ${String(page + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`}</span>
-                  <span>{isAr ? "جمعية الميادين الكشفية المغربية" : "Association des Champs Scouts Marocains"}</span>
+                  <span>{isAr ? "جمعية الميادين الكشفية المغربية" : "Association des Almayadine scouts marocaine"}</span>
                 </div>
                 <div className="flex items-start gap-3 sm:gap-5">
                   <div className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl ring-1 sm:h-16 sm:w-16 ${p.tone}`}>
@@ -1258,7 +1274,7 @@ function Objectives() {
               <span>
                 {isAr
                   ? "جمعية الميادين الكشفية المغربية · 2026"
-                  : "Association des Champs Scouts Marocains · 2026"}
+                  : "Association des Almayadine scouts marocaine · 2026"}
               </span>
               <span className="font-mono">— {String(page + 1).padStart(2, "0")} —</span>
             </footer>
@@ -1856,31 +1872,31 @@ function MinisterialTrainings() {
       soft: "bg-sky-50",
     },
     {
-      icon: ShieldCheck,
+      icon: Award,
       badge_fr: "Degré 3",
       badge_ar: "الدرجة الثالثة",
-      title_fr: "Chef de camp",
-      title_ar: "رئيس المخيم",
-      audience_fr: "Cadres expérimentés ayant complété les degrés précédents.",
-      audience_ar: "الأطر التربوية ذوي الخبرة الطويلة والذين استوفوا شروط التدرج في الدرجات السابقة.",
+      title_fr: "Certificat d'aptitude pédagogique",
+      title_ar: "شهادة الأهلية البيداغوجية",
+      audience_fr: "Cadres ayant validé les degrés 1 et 2, candidats à la certification pédagogique officielle du ministère.",
+      audience_ar: "الأطر الذين اجتازوا الدرجتين الأولى والثانية، والمترشحون للحصول على الشهادة البيداغوجية الرسمية للوزارة.",
       content_fr:
-        "Gestion administrative et financière du camp, direction de l'équipe des animateurs, résolution des conflits, alimentation et santé publique, application des dispositions légales et réglementaires du ministère de tutelle.",
+        "Approfondissement des sciences de l'éducation, psychologie de l'enfant et de l'adolescent, ingénierie pédagogique, évaluation des acquis, éthique éducative et cadre juridique des centres de vacances. Épreuves théoriques et pratiques devant un jury ministériel.",
       content_ar:
-        "التدبير الإداري والمالي للمخيم، قيادة وفاق الأطر (المنشطين)، تسيير النزاعات، التغذية والصحة العامة بالمخيم، وتنزيل التدابير القانونية والتنظيمية الصادرة عن الوزارة الوصية.",
+        "تعميق علوم التربية، سيكولوجية الطفل والمراهق، الهندسة البيداغوجية، تقييم المكتسبات، الأخلاقيات التربوية، والإطار القانوني لمراكز التخييم. اجتياز اختبارات نظرية وتطبيقية أمام لجنة وزارية.",
       practice_fr:
-        "Direction complète d'un camp d'été en tant que directeur stagiaire, sous le contrôle et le suivi des inspecteurs du ministère.",
+        "Encadrement supervisé d'un atelier pédagogique complet et présentation d'un mémoire professionnel devant le jury de certification.",
       practice_ar:
-        "إدارة وتسيير مخيم صيفي كامل كمدير متدرب تحت مراقبة وتتبع مفتشي الوزارة.",
-      color: "from-amber-500 to-orange-500",
-      ring: "ring-amber-200",
-      soft: "bg-amber-50",
+        "تأطير ورشة بيداغوجية كاملة تحت الإشراف وتقديم بحث مهني أمام لجنة المصادقة.",
+      color: "from-violet-500 to-purple-500",
+      ring: "ring-violet-200",
+      soft: "bg-violet-50",
     },
     {
       icon: GraduationCap,
-      badge_fr: "Spécialisés",
-      badge_ar: "التداريب المتخصصة",
-      title_fr: "Formations parallèles & spécialisées",
-      title_ar: "تداريب متخصصة (موازية)",
+      badge_fr: "Degré 4",
+      badge_ar: "الدرجة الرابعة",
+      title_fr: "Formations spécialisées",
+      title_ar: "التداريب المتخصصة",
       audience_fr: "Cadres orientés vers une fonction spécifique du centre de vacances ou vers la formation des formateurs.",
       audience_ar: "الأطر الموجهون لوظيفة خاصة داخل مركز التخييم أو لتأطير المكونين.",
       content_fr:
@@ -1894,6 +1910,26 @@ function MinisterialTrainings() {
       color: "from-rose-500 to-fuchsia-500",
       ring: "ring-rose-200",
       soft: "bg-rose-50",
+    },
+    {
+      icon: ShieldCheck,
+      badge_fr: "Degré 5",
+      badge_ar: "الدرجة الخامسة",
+      title_fr: "Chef de camp",
+      title_ar: "رئيس المخيم",
+      audience_fr: "Cadres expérimentés ayant complété l'ensemble des degrés précédents et obtenu la certification pédagogique.",
+      audience_ar: "الأطر التربوية ذوي الخبرة الطويلة والذين استوفوا شروط التدرج في جميع الدرجات السابقة وحصلوا على الشهادة البيداغوجية.",
+      content_fr:
+        "Gestion administrative et financière du camp, direction de l'équipe des animateurs, résolution des conflits, alimentation et santé publique, application des dispositions légales et réglementaires du ministère de tutelle.",
+      content_ar:
+        "التدبير الإداري والمالي للمخيم، قيادة وفاق الأطر (المنشطين)، تسيير النزاعات، التغذية والصحة العامة بالمخيم، وتنزيل التدابير القانونية والتنظيمية الصادرة عن الوزارة الوصية.",
+      practice_fr:
+        "Direction complète d'un camp d'été en tant que directeur stagiaire, sous le contrôle et le suivi des inspecteurs du ministère.",
+      practice_ar:
+        "إدارة وتسيير مخيم صيفي كامل كمدير متدرب تحت مراقبة وتتبع مفتشي الوزارة.",
+      color: "from-amber-500 to-orange-500",
+      ring: "ring-amber-200",
+      soft: "bg-amber-50",
     },
   ];
 
@@ -1916,7 +1952,7 @@ function MinisterialTrainings() {
         />
 
         {/* Progress ladder */}
-        <ol className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {levels.map((lv, i) => {
             const It = lv.icon;
             const isActive = i === active;

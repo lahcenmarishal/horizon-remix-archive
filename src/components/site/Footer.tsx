@@ -13,7 +13,7 @@ export function Footer() {
               <img src={logo} alt="Logo" className="h-14 w-14 rounded-full ring-2 ring-white/20" />
               <div>
                 <div className="text-lg font-bold">
-                  {bi("Champs Scouts Marocains", "جمعية الميادين الكشفية المغربية")}
+                  {bi("Almayadine scouts marocaine", "جمعية الميادين الكشفية المغربية")}
                 </div>
                 <div className="text-xs text-background/60">
                   {bi("Moroccan Scout Fields Association", "جمعية تربوية وطنية")}
@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-background/50 md:flex-row">
-          <div>{bi("© 2026 Association des Champs Scouts Marocains. Tous droits réservés.", "© 2026 جمعية الميادين الكشفية المغربية. جميع الحقوق محفوظة.")}</div>
+          <div>{bi("© 2026 Association des Almayadine scouts marocaine. Tous droits réservés.", "© 2026 جمعية الميادين الكشفية المغربية. جميع الحقوق محفوظة.")}</div>
           <div>{bi("Éducation · Citoyenneté · Nature · Engagement", "تربية · مواطنة · طبيعة · التزام")}</div>
         </div>
       </div>

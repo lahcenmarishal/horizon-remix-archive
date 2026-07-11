@@ -65,7 +65,7 @@ Deno.serve(async (req) => {
         "X-Connection-Api-Key": RESEND_API_KEY,
       },
       body: JSON.stringify({
-        from: "Champs Scouts Marocains <onboarding@resend.dev>",
+        from: "Champs Scouts Marocains <noreply@almayadinescouts.ma>",
         to: [TO_EMAIL],
         reply_to: email,
         subject: `[Contact site] Message de ${name}`,

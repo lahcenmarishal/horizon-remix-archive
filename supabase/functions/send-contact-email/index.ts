@@ -5,7 +5,7 @@ const corsHeaders = {
 };
 
 const TO_EMAIL = "almayadineassociation@gmail.com";
-const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
+const RESEND_URL = "https://api.resend.com";
 
 function escapeHtml(str: string): string {
   return str

@@ -63,7 +63,7 @@ function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-foreground/90 via-foreground/76 to-primary/62" />
       <div className="mx-auto flex w-full max-w-7xl flex-col items-start gap-5 px-4 py-20 sm:gap-8 sm:px-6 sm:py-24 lg:px-8 lg:py-28 xl:py-32">
         <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-white backdrop-blur sm:px-4 sm:text-xs">
-          <Star className="h-3.5 w-3.5" /> {bi("Mouvement scout marocain", "الميادين الكشفية المغربية")}
+          <Star className="h-3.5 w-3.5" /> {bi("Almayadine scouts marocaine", "الميادين الكشفية المغربية")}
         </span>
         <div className="flex items-center gap-4 sm:gap-5">
           <img
@@ -82,7 +82,7 @@ function Hero() {
         </h1>
         <h2 className="max-w-3xl text-xl font-semibold text-white/90 md:text-2xl">
           {bi(
-            "Association des Almayadine scouts marocaine — Moroccan Scout Fields Association",
+            "Association Almayadine scouts marocaine — Moroccan Scout Fields Association",
             "جمعية تربوية تعمل تحت لواء الحركة الكشفية الوطنية والعالمية",
           )}
         </h2>

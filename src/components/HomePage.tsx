@@ -13,7 +13,7 @@ import formationsImg from "@/assets/formations.webp";
 import environnementImg from "@/assets/environnement.webp";
 import rencontreHebdoImg from "@/assets/rencontre_hebdomadaire.webp";
 import actionsSocialesImg from "@/assets/actions_sociales.webp";
-import hymneAudio from "@/assets/hymne.mp3.asset.json";
+const HYMNE_URL = "/hymne.mp3";
 import {
   Compass, Target, Heart, Leaf, Users, Award, Tent, GraduationCap,
   HandHeart, Sparkles, Globe2, Flag, TreePine, Flame, ChevronDown,
@@ -2321,7 +2321,7 @@ function Anthem() {
               controls
               preload="none"
               className="mt-8 w-full max-w-xl"
-              src={hymneAudio.url}
+              src={HYMNE_URL}
             >
               {bi(
                 "Votre navigateur ne prend pas en charge la lecture audio.",
@@ -2329,7 +2329,7 @@ function Anthem() {
               )}
             </audio>
             <a
-              href={hymneAudio.url}
+              href={HYMNE_URL}
               download="hymne-almayadine.mp3"
               className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background px-5 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground"
             >

@@ -13,11 +13,12 @@ import formationsImg from "@/assets/formations.webp";
 import environnementImg from "@/assets/environnement.webp";
 import rencontreHebdoImg from "@/assets/rencontre_hebdomadaire.webp";
 import actionsSocialesImg from "@/assets/actions_sociales.webp";
+import hymneAudio from "@/assets/hymne.mp3.asset.json";
 import {
   Compass, Target, Heart, Leaf, Users, Award, Tent, GraduationCap,
   HandHeart, Sparkles, Globe2, Flag, TreePine, Flame, ChevronDown,
   ShieldCheck, BookOpen, MapPin, Mail, Phone, ArrowRight, Star,
-  Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route,
+  Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route, Music,
 } from "lucide-react";
 import { useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -30,6 +31,7 @@ export default function Index() {
       <Hero />
       <TrustStrip />
       <About />
+      <Anthem />
       <MotCommandant />
       <VisionMission />
       <Values />

@@ -13,11 +13,12 @@ import formationsImg from "@/assets/formations.webp";
 import environnementImg from "@/assets/environnement.webp";
 import rencontreHebdoImg from "@/assets/rencontre_hebdomadaire.webp";
 import actionsSocialesImg from "@/assets/actions_sociales.webp";
+import hymneAudio from "@/assets/hymne.mp3.asset.json";
 import {
   Compass, Target, Heart, Leaf, Users, Award, Tent, GraduationCap,
   HandHeart, Sparkles, Globe2, Flag, TreePine, Flame, ChevronDown,
   ShieldCheck, BookOpen, MapPin, Mail, Phone, ArrowRight, Star,
-  Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route,
+  Radio, Recycle, ChevronLeft, ChevronRight, Laptop, Route, Music,
 } from "lucide-react";
 import { useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -30,6 +31,7 @@ export default function Index() {
       <Hero />
       <TrustStrip />
       <About />
+      <Anthem />
       <MotCommandant />
       <VisionMission />
       <Values />
@@ -2291,6 +2293,50 @@ function YouthTrainings() {
             "تدرّج قائم على الوعد والقانون الكشفي والحصول على الشارات، وفق الطريقة الكشفية العالمية.",
           )}
         </p>
+      </div>
+    </section>
+  );
+}
+
+function Anthem() {
+  const bi = useBi();
+  return (
+    <section id="anthem" className="scroll-mt-24 bg-gradient-to-br from-primary/10 via-background to-primary/5 py-20">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl border border-primary/20 bg-card/80 p-8 shadow-xl backdrop-blur sm:p-12">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 ring-4 ring-primary/10">
+              <Music className="h-8 w-8 text-primary" />
+            </div>
+            <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+              {bi("Hymne de l'association", "نشيد الجمعية")}
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm text-muted-foreground sm:text-base">
+              {bi(
+                "Écoutez l'hymne officiel de l'Association Almayadine scouts marocaine.",
+                "استمع إلى النشيد الرسمي لجمعية الميادين الكشفية المغربية.",
+              )}
+            </p>
+            <audio
+              controls
+              preload="none"
+              className="mt-8 w-full max-w-xl"
+              src={hymneAudio.url}
+            >
+              {bi(
+                "Votre navigateur ne prend pas en charge la lecture audio.",
+                "متصفحك لا يدعم تشغيل الصوت.",
+              )}
+            </audio>
+            <a
+              href={hymneAudio.url}
+              download="hymne-almayadine.mp3"
+              className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background px-5 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-primary-foreground"
+            >
+              {bi("Télécharger l'hymne", "تحميل النشيد")}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

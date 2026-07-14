@@ -300,10 +300,11 @@ function About() {
               )}
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-3 gap-4">
+          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
             {[
               { i: Sparkles, l: bi("Apprentissage par la pratique", "التعلم بالممارسة") },
               { i: Users, l: bi("Sixaines & petites équipes", "نظام السداسيات") },
+              { i: Flag, l: bi("Système des patrouilles", "نظام الطلائع") },
               { i: TreePine, l: bi("Vie de plein air", "حياة الخلاء والطبيعة") },
             ].map(({ i: Icon, l }) => (
               <div key={l} className="rounded-2xl border border-border bg-card p-4 text-center">

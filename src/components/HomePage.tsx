@@ -44,6 +44,7 @@ export default function Index() {
       <Organization />
       <BureauOffice />
       <Membership />
+      <Partners />
       <Contact />
       <Footer />
     </div>
@@ -2335,6 +2336,40 @@ function Anthem() {
             >
               {bi("Télécharger l'hymne", "تحميل النشيد")}
             </a>
+
+            <div className="mt-10 w-full">
+              <h3 className="mb-6 text-center text-lg font-bold text-foreground sm:text-xl">
+                {bi("Paroles de l'hymne", "كلمات النشيد")}
+              </h3>
+              <div
+                dir="rtl"
+                lang="ar"
+                className="mx-auto max-w-2xl rounded-2xl border border-primary/15 bg-background/60 p-6 text-right font-[Tajawal,Cairo,serif] text-base leading-loose text-foreground sm:p-8 sm:text-lg"
+              >
+                <p className="whitespace-pre-line">
+                  {`وَفِيكِ المَكَارِمُ كَمْ تَعْتَلِي
+ميادين روض الهدى و العلا
+بِأَرْضِ المَغَارِبِ مَهْدِ الأُبَاةِ
+سَنَمْضِي نُشِيدُ غَدَاً أَجْمَلَا
+ميادين الكشفية المغربية`}
+                </p>
+                <div className="my-4 h-px bg-primary/20" />
+                <p className="whitespace-pre-line">
+                  {`بَرَاعِمُ حُبٍّ، نَقَاءُ الزَّهَرْ
+وَأَشْبَالُ عِزٍّ تَقُودُ الأَثَرْ
+تَعَلَّمْنَ طُهْرَاً، كَبِرْنَا فِدَاءً
+لِهَذَا الوَطَنْ، نَحْنُ نُورُ البَصَرْ
+ميادين الكشفية المغربية`}
+                </p>
+                <div className="my-4 h-px bg-primary/20" />
+                <p className="whitespace-pre-line">
+                  {`وَكَشَّافَةُ الخَيْرِ فِيكِ اسْتَقَامُوا
+وَمُرْشِدَةُ الحَقِّ لِلْمَجْدِ قَامُوا
+نَصُونُ الدِّيَارَ، نُحِبُّ التَّآخِي
+وَفِي كُلِّ سَاحٍ لَنَا الِاحْتِرَامُ`}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

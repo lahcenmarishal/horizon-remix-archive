@@ -48,6 +48,7 @@ export default function Index() {
       <Partners />
       <Contact />
       <Footer />
+      <OnlineVisitors />
     </div>
   );
 }

@@ -2397,7 +2397,7 @@ function Partners() {
             {bi("Nos partenaires", "شركاؤنا")}
           </h2>
         </div>
-        <div className="mt-12 grid grid-cols-2 items-center justify-items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-1 items-center justify-items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {partners.map((p) => (
             <div
               key={p.src}

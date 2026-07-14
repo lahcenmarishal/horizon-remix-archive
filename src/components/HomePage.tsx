@@ -2376,3 +2376,43 @@ function Anthem() {
     </section>
   );
 }
+
+function Partners() {
+  const bi = useBi();
+  const partners = [
+    { src: "/partners/culture.jpeg", alt: "Ministère de la Jeunesse, de la Culture et de la Communication" },
+    { src: "/partners/sante.jpeg", alt: "Ministère de la Santé et de la Protection sociale" },
+    { src: "/partners/federation-camping.jpeg", alt: "La Fédération Nationale des Colonies des Vacances" },
+    { src: "/partners/ligue-scoutisme.jpeg", alt: "La Ligue Nationale du Scoutisme Marocaine" },
+    { src: "/partners/bab-rayan.jpeg", alt: "Association Bab Rayan" },
+  ];
+  return (
+    <section id="partners" className="scroll-mt-24 py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            {bi("Partenaires", "شركاؤنا")}
+          </div>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+            {bi("Nos partenaires", "شركاؤنا")}
+          </h2>
+        </div>
+        <div className="mt-12 grid grid-cols-2 items-center justify-items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
+          {partners.map((p) => (
+            <div
+              key={p.src}
+              className="flex h-32 w-full items-center justify-center rounded-2xl border border-border bg-card p-4 shadow-sm transition hover:shadow-md"
+            >
+              <img
+                src={p.src}
+                alt={p.alt}
+                loading="lazy"
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

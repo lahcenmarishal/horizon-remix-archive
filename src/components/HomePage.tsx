@@ -42,6 +42,7 @@ export default function Index() {
       <YouthTrainings />
       <Uniforme />
       <Activities />
+      <Inclusion />
       <Organization />
       <BureauOffice />
       <Membership />

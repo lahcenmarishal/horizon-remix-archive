@@ -42,6 +42,7 @@ export default function Index() {
       <YouthTrainings />
       <Uniforme />
       <Activities />
+      <Inclusion />
       <Organization />
       <BureauOffice />
       <Membership />
@@ -1520,6 +1521,94 @@ function Activities() {
               </div>
             </article>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------- INCLUSION / ENFANTS EN SITUATION DIFFICILE */
+function Inclusion() {
+  const bi = useBi();
+  const actions = [
+    {
+      i: Heart,
+      t: bi("Écoute et accompagnement psychologique", "الاستماع والمواكبة النفسية"),
+      b: bi(
+        "Nous offrons un espace d'écoute bienveillant aux enfants vulnérables, en partenariat avec des éducateurs spécialisés et des associations de protection de l'enfance.",
+        "نوفر فضاءً للاستماع الحنون للأطفال المعرضين للضعف، بشراكة مع مربين متخصصين وجمعيات حماية الطفولة.",
+      ),
+    },
+    {
+      i: HandHeart,
+      t: bi("Soutien scolaire et fournitures", "الدعم المدرسي واللوازم التعليمية"),
+      b: bi(
+        "Des ateliers de soutien scolaire, des distributions de cartables, de livres et de fournitures permettent à chaque enfant de retrouver confiance en son avenir.",
+        "تتيح ورشات الدعم المدرسي وتوزيع الحقائب والكتب واللوازم لكل طفل استعادة الثقة في مستقبله.",
+      ),
+    },
+    {
+      i: ShieldCheck,
+      t: bi("Protection et prévention des risques", "الحماية والوقاية من المخاطر"),
+      b: bi(
+        "Nous sensibilisons les familles, les écoles et les jeunes leaders aux droits de l'enfant, à la prévention de la violence et aux signaux d'alerte.",
+        "نحسّس الأسر والمدارس والقادة الشباب بحقوق الطفل ووقايته من العنف ومؤشرات الخطر.",
+      ),
+    },
+    {
+      i: Users,
+      t: bi("Activités de cohésion sociale", "أنشطة التماسك الاجتماعي"),
+      b: bi(
+        "Camps inclusifs, sorties culturelles et journées de loisir permettent aux enfants de toutes conditions de grandir ensemble et de tisser des liens d'amitié.",
+        "مخيمات شاملة، وزيارات ثقافية، وأيام ترفيه تمكن الأطفال من جميع الظروف من النمو معًا ونسج روابط الصداقة.",
+      ),
+    },
+  ];
+
+  return (
+    <section id="inclusion" className="scroll-mt-24 bg-gradient-to-br from-rose-50/60 via-background to-primary/5 py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          eyebrow={bi("Inclusion sociale", "الإدماج الاجتماعي")}
+          title={bi(
+            "Préserver les enfants en situation difficile : vers une société plus inclusive et plus juste",
+            "الاهتمام بالأطفال في وضع صعبة: نحو مجتمع أكثر شمولية وعدالة",
+          )}
+          subtitle={bi(
+            "L'Association Almayadine scouts marocaine s'engage aux côtés des enfants vulnérables — qu'ils soient en situation de précarité, d'isolement ou de handicap — pour leur offrir un cadre d'écoute, d'apprentissage et d'épanouissement.",
+            "تنخرط جمعية الميادين الكشفية المغربية إلى جانب الأطفال المعرضين للضعف — في حالة هشاشة أو عزلة أو إعاقة — لتوفير فضاء للاستماع والتعلم والتنمية الشخصية.",
+          )}
+        />
+        <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/5">
+            <img
+              src={actionsSocialesImg}
+              alt={bi("Actions sociales au profit des enfants", "أنشطة اجتماعية لفائدة الأطفال")}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent" />
+            <div className="absolute bottom-0 start-0 p-6 text-white sm:p-8">
+              <div className="text-xs font-bold uppercase tracking-widest text-white/80">{bi("Notre engagement", "التزامنا")}</div>
+              <p className="mt-2 max-w-md text-sm font-medium leading-relaxed text-white/95">
+                {bi(
+                  "Aucun enfant ne doit être laissé de côté. Chaque jeune mérite les mêmes chances de grandir, d'apprendre et de rêver.",
+                  "لا يجب أن يُترك أي طفل على الهامش. كل شاب يستحق فرصًا متكافئة للنمو والتعلم والحلم.",
+                )}
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {actions.map(({ i: Icon, t, b }) => (
+              <div key={t} className="rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div className="grid h-12 w-12 place-items-center rounded-xl bg-rose-500/10 text-rose-600">
+                  <Icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 text-base font-bold text-foreground">{t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

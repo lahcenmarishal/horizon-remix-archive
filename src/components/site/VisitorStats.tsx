@@ -182,8 +182,8 @@ export function VisitorStats() {
                 <AreaChart data={data} margin={{ left: -20, right: 8, top: 8 }}>
                   <defs>
                     <linearGradient id="visitsFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity={0.45} />
-                      <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity={0.03} />
+                      <stop offset="0%" stopColor="var(--primary)" stopOpacity={0.45} />
+                      <stop offset="100%" stopColor="var(--primary)" stopOpacity={0.03} />
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" className="stroke-border" vertical={false} />
@@ -191,18 +191,18 @@ export function VisitorStats() {
                   <YAxis tickLine={false} axisLine={false} fontSize={11} allowDecimals={false} />
                   <Tooltip
                     contentStyle={{
-                      background: "hsl(var(--card))",
-                      border: "1px solid hsl(var(--border))",
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
                       borderRadius: 12,
                       fontSize: 12,
-                      color: "hsl(var(--foreground))",
+                      color: "var(--foreground)",
                     }}
                   />
                   <Area
                     type="monotone"
                     dataKey="visits"
                     name={bi("Visites", "الزيارات")}
-                    stroke="hsl(var(--primary))"
+                    stroke="var(--primary)"
                     strokeWidth={2}
                     fill="url(#visitsFill)"
                   />
@@ -223,17 +223,17 @@ export function VisitorStats() {
                   <YAxis tickLine={false} axisLine={false} fontSize={11} allowDecimals={false} />
                   <Tooltip
                     contentStyle={{
-                      background: "hsl(var(--card))",
-                      border: "1px solid hsl(var(--border))",
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
                       borderRadius: 12,
                       fontSize: 12,
-                      color: "hsl(var(--foreground))",
+                      color: "var(--foreground)",
                     }}
                   />
                   <Bar
                     dataKey="sessions"
                     name={bi("Visiteurs", "زوار")}
-                    fill="hsl(var(--primary))"
+                    fill="var(--primary)"
                     radius={[6, 6, 0, 0]}
                   />
                 </BarChart>

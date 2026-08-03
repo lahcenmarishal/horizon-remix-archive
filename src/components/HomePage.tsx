@@ -48,6 +48,7 @@ export default function Index() {
       <BureauOffice />
       <Membership />
       <Partners />
+      <VisitorStats />
       <Contact />
       <Footer />
       <OnlineVisitors />

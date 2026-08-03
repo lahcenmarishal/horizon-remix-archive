@@ -7,6 +7,7 @@ import {
 import { supabase } from "@/integrations/supabase/client";
 import { useBi, useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { useOnlineCount, visitSessionId } from "@/hooks/use-online-count";
 
 type Bucket = "day" | "month" | "year";
 type Row = { bucket_start: string; visits: number; sessions: number };
@@ -17,34 +18,18 @@ type Totals = {
   first_visit: string | null;
 };
 
-function getSessionId() {
-  try {
-    let id = sessionStorage.getItem("visit_session_id");
-    if (!id) {
-      id =
-        (typeof crypto !== "undefined" && "randomUUID" in crypto
-          ? crypto.randomUUID()
-          : Math.random().toString(36).slice(2)) + "-" + Date.now();
-      sessionStorage.setItem("visit_session_id", id);
-    }
-    return id;
-  } catch {
-    return "anon-" + Date.now();
-  }
-}
-
 export function VisitorStats() {
   const bi = useBi();
   const { lang } = useI18n();
   const [bucket, setBucket] = useState<Bucket>("day");
   const [rows, setRows] = useState<Row[]>([]);
   const [totals, setTotals] = useState<Totals | null>(null);
-  const [online, setOnline] = useState(1);
+  const online = useOnlineCount();
   const [loading, setLoading] = useState(true);
 
   // Record the visit once per browser session
   useEffect(() => {
-    const sessionId = getSessionId();
+    const sessionId = visitSessionId();
     try {
       if (sessionStorage.getItem("visit_recorded") === "1") return;
       sessionStorage.setItem("visit_recorded", "1");
@@ -53,25 +38,6 @@ export function VisitorStats() {
       .from("site_visits")
       .insert({ session_id: sessionId, path: window.location.pathname })
       .then(() => {});
-  }, []);
-
-  // Live online count (presence)
-  useEffect(() => {
-    const channel = supabase.channel("online-visitors", {
-      config: { presence: { key: getSessionId() } },
-    });
-    channel
-      .on("presence", { event: "sync" }, () => {
-        setOnline(Object.keys(channel.presenceState()).length || 1);
-      })
-      .subscribe(async (status) => {
-        if (status === "SUBSCRIBED") {
-          await channel.track({ online_at: new Date().toISOString() });
-        }
-      });
-    return () => {
-      supabase.removeChannel(channel);
-    };
   }, []);
 
   // Stats

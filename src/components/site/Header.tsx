@@ -11,6 +11,7 @@ const nav = [
   { fr: "Branches", ar: "المراحل الكشفية", href: "#branches" },
   { fr: "Formations jeunes", ar: "تكوين الشباب", href: "#youth-trainings" },
   { fr: "Activités", ar: "الأنشطة", href: "#activities" },
+  { fr: "Inclusion", ar: "الإدماج الاجتماعي", href: "#inclusion" },
   { fr: "Organisation", ar: "التنظيم", href: "#organization" },
   { fr: "Bureau exécutif", ar: "المكتب المسير", href: "#bureau" },
   { fr: "Adhésion", ar: "الانخراط", href: "#membership" },

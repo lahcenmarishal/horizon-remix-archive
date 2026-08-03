@@ -14,13 +14,49 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      site_visits: {
+        Row: {
+          id: string
+          path: string | null
+          session_id: string | null
+          visited_at: string
+        }
+        Insert: {
+          id?: string
+          path?: string | null
+          session_id?: string | null
+          visited_at?: string
+        }
+        Update: {
+          id?: string
+          path?: string | null
+          session_id?: string | null
+          visited_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      visitor_stats: {
+        Args: { _bucket: string }
+        Returns: {
+          bucket_start: string
+          sessions: number
+          visits: number
+        }[]
+      }
+      visitor_totals: {
+        Args: never
+        Returns: {
+          first_visit: string
+          today_visits: number
+          total_sessions: number
+          total_visits: number
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never

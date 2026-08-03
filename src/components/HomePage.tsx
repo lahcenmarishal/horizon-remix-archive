@@ -1,6 +1,7 @@
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { OnlineVisitors } from "@/components/site/OnlineVisitors";
+import { VisitorStats } from "@/components/site/VisitorStats";
 import { useBi, useI18n } from "@/lib/i18n";
 import logo from "@/assets/logo.jpeg";
 import hero from "@/assets/hero.jpg";
@@ -47,6 +48,7 @@ export default function Index() {
       <BureauOffice />
       <Membership />
       <Partners />
+      <VisitorStats />
       <Contact />
       <Footer />
       <OnlineVisitors />

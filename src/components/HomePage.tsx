@@ -1572,7 +1572,7 @@ function Inclusion() {
           eyebrow={bi("Inclusion sociale", "الإدماج الاجتماعي")}
           title={bi(
             "Préserver les enfants en situation difficile : vers une société plus inclusive et plus juste",
-            "الاهتمام بالأطفال في وضع صعبة: نحو مجتمع أكثر شمولية وعدالة",
+            "الاهتمام بالأطفال في وضعية صعبة: نحو مجتمع أكثر شمولية وعدالة",
           )}
           subtitle={bi(
             "L'Association Almayadine scouts marocaine s'engage aux côtés des enfants vulnérables — qu'ils soient en situation de précarité, d'isolement ou de handicap — pour leur offrir un cadre d'écoute, d'apprentissage et d'épanouissement.",

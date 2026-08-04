@@ -2473,8 +2473,108 @@ function Anthem() {
   );
 }
 
+function VisualIdentity() {
+  const bi = useBi();
+  const items = [
+    {
+      n: "1",
+      ar_t: "الإطار الخارجي واللون الأحمر (العزم والتضحية)",
+      fr_t: "Le cadre extérieur rouge (détermination et sacrifice)",
+      ar: "الحافة الحمراء: يحيط بالشعار إطار أحمر قاني، يرمز إلى الحماس، وحرارة العطاء، والتضحية في سبيل المبادئ السامية وخدمة الوطن والمجتمع.",
+      fr: "Le liseré rouge vif qui entoure l'emblème symbolise l'enthousiasme, la chaleur du don de soi et le sacrifice au service des principes élevés, de la patrie et de la société.",
+    },
+    {
+      n: "2",
+      ar_t: "الحزام الأخضر (الهوية والانفتاح)",
+      fr_t: "L'anneau vert (identité et ouverture)",
+      ar: "يمثل هذا الإطار الدائري الأخضر مساحة واسعة تجمع بين الانتماء الوطني والبعد العالمي:\n• اللون الأخضر: يرمز إلى نماء الشباب، وحب الطبيعة والبيئة التي تشكل الميدان الأساسي للأنشطة الكشفية.\n• النص العربي العلوي: عبارة «جمعية الميادين الكشفية المغربية»، تعبير راسخ عن الهوية والانتماء للوطن الأم.\n• النص الإنجليزي السفلي: عبارة «MOROCCAN SCOUT FIELDS ASSOCIATION»، تعكس روح الانفتاح والتواصل مع الحركة الكشفية العالمية.\n• النجمتان الخضراوان الجانبيتان: نجمتان خماسيتان تحكمان جانبي الشعار، تأكيدًا على الارتباط الوثيق بالراية المغربية وعلم الوطن.",
+      fr: "Cet anneau vert réunit l'appartenance nationale et la dimension universelle :\n• Le vert évoque la croissance de la jeunesse et l'amour de la nature, terrain premier des activités scoutes.\n• Le texte arabe supérieur « جمعية الميادين الكشفية المغربية » affirme l'identité et l'attachement à la patrie.\n• Le texte anglais inférieur « MOROCCAN SCOUT FIELDS ASSOCIATION » traduit l'ouverture au mouvement scout mondial.\n• Les deux étoiles vertes latérales, à cinq branches, rappellent le drapeau du Royaume du Maroc.",
+    },
+    {
+      n: "3",
+      ar_t: "القرص البرتقالي الداخلي (الحيوية والطاقة)",
+      fr_t: "Le disque orange intérieur (vitalité et énergie)",
+      ar: "يغمر خلفية قلب الشعار لون برتقالي مشرق، وهو رمز للحيوية، الدفء، الإشراق، وطاقة الشباب المتجددة التي لا تنضب في ميادين البذل والتدريب.",
+      fr: "Le cœur de l'emblème est baigné d'un orange lumineux : symbole de vitalité, de chaleur, de rayonnement et de l'énergie sans cesse renouvelée de la jeunesse sur les terrains de l'effort et de la formation.",
+    },
+    {
+      n: "4",
+      ar_t: "زهرة الكشافة البيضاء (النقاء والاتجاه السليم)",
+      fr_t: "La fleur de lys blanche (pureté et bonne direction)",
+      ar: "• زهرة اللوتس (Fleur-de-lis): الرمز الكشفي العالمي العريق الذي يشير إلى بوصلة الكشاف التي تدله دائماً على طريق الخير والصواب.\n• اللون الأبيض: يجسد صفاء السريرة، نقاء القلوب، وطهارة النوايا التي يتحلى بها الكشاف في مسيرته التربوية.\n• كما تزين الورقتان الجانبيتان للزهرة نجمتان برتقاليتان صغيرتان تزيدان الشعار تناغماً وجمالاً.",
+      fr: "• La fleur de lys est le symbole scout universel : la boussole du scout, qui lui indique toujours le chemin du bien et du juste.\n• Le blanc incarne la limpidité de la conscience, la pureté des cœurs et la droiture des intentions.\n• Deux petites étoiles orange ornent les pétales latéraux, ajoutant harmonie et beauté à l'emblème.",
+    },
+    {
+      n: "5",
+      ar_t: "النجمة الخماسية المغربية الخضراء (السيادة الوطنية)",
+      fr_t: "L'étoile marocaine verte (souveraineté nationale)",
+      ar: "تتوسط الشعار نجمة خماسية خضراء متداخلة مع زهرة الكشافة، وهي رمز الوطن الأبدي (الراية المغربية)، لتؤكد أن العمل الكشفي في «الميادين» ينبع من حب الوطن ويصب في خدمته ورفعة شأنه.",
+      fr: "Au centre, une étoile verte à cinq branches entrelacée avec la fleur scoute : symbole éternel de la patrie (le drapeau marocain), affirmant que l'action scoute des « Almayadine » naît de l'amour du pays et se consacre à son service.",
+    },
+    {
+      n: "6",
+      ar_t: "الحبل والعقدة الكشفية في الأسفل (الأخوة والوحدة)",
+      fr_t: "La corde et le nœud scout (fraternité et unité)",
+      ar: "يلتف في قاعدة الشعار حبل أبيض ينتهي بعقدة كشفية واضحة: يرمزان إلى روح الأخوة الكشفية العالمية، ومتانة الروابط التي تجمع بين أفراد الكشافة، فضلاً عن المهارات العملية، الاعتماد على النفس، والقدرة على مواجهة التحديات في «الميدان».",
+      fr: "À la base, une corde blanche terminée par un nœud scout : elle symbolise la fraternité scoute mondiale et la solidité des liens entre scouts, ainsi que les compétences pratiques, l'autonomie et la capacité à relever les défis sur le terrain.",
+    },
+  ];
+
+  return (
+    <section id="identite" className="scroll-mt-24 bg-muted/40 py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+            {bi("Identité visuelle de l'association", "الهوية البصرية للجمعية")}
+          </h2>
+          <p className="mx-auto mt-3 max-w-3xl text-sm text-muted-foreground sm:text-base">
+            {bi(
+              "Signification des couleurs et des symboles de l'emblème de l'Association Almayadine scouts marocaine.",
+              "شرح الهوية البصرية لجمعية الميادين الكشفية المغربية: دلالات الألوان والرموز في الشعار.",
+            )}
+          </p>
+        </div>
+
+        <div className="mt-12 grid items-start gap-10 lg:grid-cols-[320px_1fr]">
+          <div className="flex justify-center lg:sticky lg:top-28">
+            <img
+              src={logo}
+              alt={bi(
+                "Emblème de l'Association Almayadine scouts marocaine",
+                "شعار جمعية الميادين الكشفية المغربية",
+              )}
+              className="h-56 w-56 rounded-full object-cover shadow-2xl ring-4 ring-primary/25 sm:h-72 sm:w-72"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2">
+            {items.map((it) => (
+              <article
+                key={it.n}
+                className="rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:shadow-md"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/15 text-sm font-bold text-primary">
+                    {it.n}
+                  </span>
+                  <h3 className="text-base font-bold text-foreground">{bi(it.fr_t, it.ar_t)}</h3>
+                </div>
+                <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+                  {bi(it.fr, it.ar)}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Partners() {
   const bi = useBi();
+
   const partners = [
     { src: "/partners/culture.jpeg", alt: "Ministère de la Jeunesse, de la Culture et de la Communication" },
     { src: "/partners/sante.jpeg", alt: "Ministère de la Santé et de la Protection sociale" },

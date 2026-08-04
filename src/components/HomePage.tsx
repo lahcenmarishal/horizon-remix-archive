@@ -34,6 +34,8 @@ export default function Index() {
       <TrustStrip />
       <About />
       <Anthem />
+      <VisualIdentity />
+
       <MotCommandant />
       <VisionMission />
       <Values />

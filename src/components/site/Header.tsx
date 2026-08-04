@@ -9,6 +9,8 @@ const nav = [
   { fr: "L'Association", ar: "الجمعية", href: "#about" },
   { fr: "Vision & Mission", ar: "الرؤية والرسالة", href: "#vision" },
   { fr: "Branches", ar: "المراحل الكشفية", href: "#branches" },
+  { fr: "Identité visuelle", ar: "الهوية البصرية", href: "#identite" },
+
   { fr: "Formations jeunes", ar: "تكوين الشباب", href: "#youth-trainings" },
   { fr: "Activités", ar: "الأنشطة", href: "#activities" },
   { fr: "Inclusion", ar: "الإدماج الاجتماعي", href: "#inclusion" },
